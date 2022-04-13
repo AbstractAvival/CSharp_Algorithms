@@ -10,7 +10,7 @@ namespace CSharp_Algorithms.SortingAlgorithms
 {
 	public class InsertionSort
 	{
-		public int [] Sort( int [] array )
+		public void Sort( int [] array )
 		{
 			int key, currentItem;
 			for( int index = 1; index < array.Length; index++ )
@@ -24,7 +24,6 @@ namespace CSharp_Algorithms.SortingAlgorithms
 				}
 				array[ currentItem + 1 ] = key;
 			}
-			return array;
 		}
 	}
 }
