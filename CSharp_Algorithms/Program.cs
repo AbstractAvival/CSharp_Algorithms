@@ -1,5 +1,4 @@
 ﻿using System;
-using CSharp_Algorithms.SortingAlgorithms;
 
 namespace CSharp_Algorithms
 {
