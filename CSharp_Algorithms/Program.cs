@@ -1,4 +1,5 @@
 ﻿using System;
+using CSharp_Algorithms.SortingAlgorithms;
 
 namespace CSharp_Algorithms
 {
@@ -7,7 +8,15 @@ namespace CSharp_Algorithms
 		static void Main( string [] args )
 		{
 			Console.WriteLine( "Hello Algorithms!" );
-			Console.WriteLine( 1 / 2 );
+			int[] test = { 75, 0, 2, 55, 43, 97, 62, 12, 3, 17 };
+
+			ShellSort sorter = new ShellSort();
+
+			sorter.Sort( test );
+			foreach( int number in test )
+			{
+				Console.WriteLine( number );
+			}
 		}
 	}
 }

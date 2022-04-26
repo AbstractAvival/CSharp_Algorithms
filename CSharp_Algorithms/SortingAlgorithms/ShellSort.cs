@@ -11,7 +11,7 @@ namespace CSharp_Algorithms.SortingAlgorithms
 {
 	public class ShellSort
 	{
-		//Using shell sort's original sequence: k = n / 2
+		//Using shell sort's original gap sequence: k = n / 2
 		public void Sort( int [] array )
 		{
 			int interval = array.Length / 2;
@@ -30,6 +30,7 @@ namespace CSharp_Algorithms.SortingAlgorithms
 						array[ reversePosition ] = placeholder;
 					}
 				}
+				interval /= 2;
 			}
 		}
 	}
