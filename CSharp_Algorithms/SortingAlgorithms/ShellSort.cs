@@ -11,9 +11,26 @@ namespace CSharp_Algorithms.SortingAlgorithms
 {
 	public class ShellSort
 	{
+		//Using shell sort's original sequence: k = n / 2
 		public void Sort( int [] array )
 		{
-
+			int interval = array.Length / 2;
+			while( interval > 0 )
+			{
+				for( int currentIndex = 0; currentIndex < interval; currentIndex++ )
+				{
+					for( int sortPosition = currentIndex; sortPosition < array.Length; sortPosition += interval )
+					{
+						int placeholder = array[ sortPosition ];
+						int reversePosition = sortPosition;
+						for( ; reversePosition >= interval && array[ reversePosition - interval ] > placeholder; reversePosition -= interval )
+						{
+							array[ reversePosition ] = array[ reversePosition - interval ];
+						}
+						array[ reversePosition ] = placeholder;
+					}
+				}
+			}
 		}
 	}
 }

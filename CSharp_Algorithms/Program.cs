@@ -7,6 +7,7 @@ namespace CSharp_Algorithms
 		static void Main( string [] args )
 		{
 			Console.WriteLine( "Hello Algorithms!" );
+			Console.WriteLine( 1 / 2 );
 		}
 	}
 }
