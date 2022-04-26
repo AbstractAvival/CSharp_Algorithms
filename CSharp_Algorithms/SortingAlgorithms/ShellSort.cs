@@ -22,12 +22,12 @@ namespace CSharp_Algorithms.SortingAlgorithms
 					for( int sortPosition = currentIndex; sortPosition < array.Length; sortPosition += interval )
 					{
 						int placeholder = array[ sortPosition ];
-						int reverseInterval = sortPosition;
-						for( ; reverseInterval >= interval && array[ reverseInterval - interval ] > placeholder; reverseInterval -= interval )
+						int reversePosition = sortPosition;
+						for( ; reversePosition >= interval && array[ reversePosition - interval ] > placeholder; reversePosition -= interval )
 						{
-							array[ reverseInterval ] = array[ reverseInterval - interval ];
+							array[ reversePosition ] = array[ reversePosition - interval ];
 						}
-						array[ reverseInterval ] = placeholder;
+						array[ reversePosition ] = placeholder;
 					}
 				}
 				interval /= 2;
