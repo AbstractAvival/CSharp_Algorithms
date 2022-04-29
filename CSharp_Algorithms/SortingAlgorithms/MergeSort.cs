@@ -14,7 +14,7 @@ namespace CSharp_Algorithms.SortingAlgorithms
 	{
 		public void Sort( int [] array, int initialIndex, int finalIndex )
 		{
-			if( initialIndex > finalIndex )
+			if( initialIndex >= finalIndex )
 				return;
 
 			int middleIndex = ( initialIndex + finalIndex ) / 2;
