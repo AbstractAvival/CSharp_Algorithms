@@ -30,11 +30,14 @@ namespace CSharp_Algorithms.SortingAlgorithms
 			{
 				if( array[ currentIndex ] < pivotValue )
 				{
-
+					currentPivotIndex++;
+					Swap( array, currentIndex, currentPivotIndex );
 				}
 			}
 
-			return -1;
+			currentPivotIndex++;
+			Swap( array, currentPivotIndex, endIndex );
+			return currentPivotIndex;
 		}
 
 		private void Swap( int [] targetArray, int firstTargetIndex, int secondTargetIndex )
