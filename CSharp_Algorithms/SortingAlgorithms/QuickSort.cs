@@ -26,7 +26,7 @@ namespace CSharp_Algorithms.SortingAlgorithms
 			int pivotValue = array[ endIndex ];
 			int currentPivotIndex = startIndex - 1;
 
-			for( int currentIndex = startIndex; currentIndex < endIndex - 1; currentIndex++ )
+			for( int currentIndex = startIndex; currentIndex < endIndex; currentIndex++ )
 			{
 				if( array[ currentIndex ] < pivotValue )
 				{
