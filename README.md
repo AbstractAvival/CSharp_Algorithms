@@ -16,3 +16,4 @@ Algorithms that are used to rearrange a given array or list elements according t
 | Insertion Sort | [CSharp_Algorithms/SortingAlgorithms/InsertionSort](https://github.com/AbstractAvival/CSharp_Algorithms/blob/master/CSharp_Algorithms/SortingAlgorithms/InsertionSort.cs) |
 | Shell Sort | [CSharp_Algorithms/SortingAlgorithms/ShellSort](https://github.com/AbstractAvival/CSharp_Algorithms/blob/master/CSharp_Algorithms/SortingAlgorithms/ShellSort.cs) |
 | Merge Sort | [CSharp_Algorithms/SortingAlgorithms/MergeSort](https://github.com/AbstractAvival/CSharp_Algorithms/blob/master/CSharp_Algorithms/SortingAlgorithms/MergeSort.cs) |
+| Quick Sort | [CSharp_Algorithms/SortingAlgorithms/QuickSort](https://github.com/AbstractAvival/CSharp_Algorithms/blob/master/CSharp_Algorithms/SortingAlgorithms/QuickSort.cs) |
