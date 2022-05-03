@@ -23,7 +23,25 @@ namespace CSharp_Algorithms.SortingAlgorithms
 
 		private int Partition( int [] array, int startIndex, int endIndex )
 		{
+			int pivotValue = array[ endIndex ];
+			int currentPivotIndex = startIndex - 1;
+
+			for( int currentIndex = startIndex; currentIndex < endIndex - 1; currentIndex++ )
+			{
+				if( array[ currentIndex ] < pivotValue )
+				{
+
+				}
+			}
+
 			return -1;
+		}
+
+		private void Swap( int [] targetArray, int firstTargetIndex, int secondTargetIndex )
+		{
+			int tempValue = targetArray[ firstTargetIndex ];
+			targetArray[ firstTargetIndex ] = targetArray[ secondTargetIndex ];
+			targetArray[ secondTargetIndex ] = tempValue;
 		}
 	}
 }
