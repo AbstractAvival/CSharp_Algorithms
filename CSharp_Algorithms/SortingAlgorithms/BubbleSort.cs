@@ -20,7 +20,8 @@ namespace CSharp_Algorithms.SortingAlgorithms
 				{
 					if( array[ currentIndex ] > array[ currentIndex + 1 ] )
 					{
-
+						Swap( array, currentIndex, currentIndex + 1 );
+						swappedElements = true;
 					}
 				}
 			} while( swappedElements );
