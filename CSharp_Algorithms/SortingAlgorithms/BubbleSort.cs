@@ -12,7 +12,7 @@ namespace CSharp_Algorithms.SortingAlgorithms
 	{
 		public void Sort( int [] array )
 		{
-			bool swappedElements = false;
+			bool swappedElements;
 			do 
 			{
 				swappedElements = false;
