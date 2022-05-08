@@ -25,5 +25,12 @@ namespace CSharp_Algorithms.SortingAlgorithms
 				}
 			} while( swappedElements );
 		}
+
+		private void Swap( int [] targetArray, int firstTargetIndex, int secondTargetIndex )
+		{
+			int tempValue = targetArray[ firstTargetIndex ];
+			targetArray[ firstTargetIndex ] = targetArray[ secondTargetIndex ];
+			targetArray[ secondTargetIndex ] = tempValue;
+		}
 	}
 }
